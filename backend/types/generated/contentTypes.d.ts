@@ -848,7 +848,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
         maxLength: 256;
       }>;
     slug: Attribute.UID<'api::article.article', 'title'>;
-    cover: Attribute.Media<'images' | 'files' | 'videos'>;
+    cover: Attribute.Media<'images' | 'files' | 'videos', true>;
     category: Attribute.Relation<
       'api::article.article',
       'manyToOne',
