@@ -4,6 +4,7 @@
  */
 import ckeditor5 from "@_sh/strapi-plugin-ckeditor/strapi-admin";
 import ckeditor from "@ckeditor/strapi-plugin-ckeditor/strapi-admin";
+import apolloSandbox from "@creazy231/strapi-plugin-apollo-sandbox/strapi-admin";
 import calendar from "@offset-dev/strapi-calendar/strapi-admin";
 import strapiCloud from "@strapi/plugin-cloud/strapi-admin";
 import documentation from "@strapi/plugin-documentation/strapi-admin";
@@ -21,6 +22,7 @@ renderAdmin(document.getElementById("strapi"), {
   plugins: {
     ckeditor5: ckeditor5,
     ckeditor: ckeditor,
+    "apollo-sandbox": apolloSandbox,
     calendar: calendar,
     "strapi-cloud": strapiCloud,
     documentation: documentation,
