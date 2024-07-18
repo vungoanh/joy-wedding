@@ -1,0 +1,45 @@
+{
+  "name": "corporate-blog-template",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^2.1.1",
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.13",
+    "@offset-dev/strapi-calendar": "^0.1.1",
+    "@strapi/plugin-cloud": "4.20.4",
+    "@strapi/plugin-documentation": "^4.25.4",
+    "@strapi/plugin-graphql": "^4.25.4",
+    "@strapi/plugin-i18n": "4.20.4",
+    "@strapi/plugin-sentry": "^4.25.4",
+    "@strapi/plugin-seo": "^1.9.8",
+    "@strapi/plugin-users-permissions": "4.20.4",
+    "@strapi/strapi": "4.25.4",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-plugin-config-sync": "^1.2.5",
+    "strapi-plugin-import-export-entries": "^1.23.1",
+    "strapi-plugin-publisher": "^1.5.7",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "0f95dc7c-202b-4ab2-a874-3799d23b1640"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
