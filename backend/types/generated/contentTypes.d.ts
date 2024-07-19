@@ -829,12 +829,42 @@ export interface PluginPublisherAction extends Schema.CollectionType {
   };
 }
 
+export interface ApiActicleFlowerActicleFlower extends Schema.CollectionType {
+  collectionName: 'acticle_flowers';
+  info: {
+    singularName: 'acticle-flower';
+    pluralName: 'acticle-flowers';
+    displayName: 'Acticle Flower';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    test: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::acticle-flower.acticle-flower',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::acticle-flower.acticle-flower',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiArticleArticle extends Schema.CollectionType {
   collectionName: 'articles';
   info: {
     singularName: 'article';
     pluralName: 'articles';
-    displayName: 'Article';
+    displayName: 'Article Fruit Tray';
     description: 'Create your blog content';
   };
   options: {
@@ -1204,6 +1234,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::publisher.action': PluginPublisherAction;
+      'api::acticle-flower.acticle-flower': ApiActicleFlowerActicleFlower;
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
